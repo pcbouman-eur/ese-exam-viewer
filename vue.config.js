@@ -5,6 +5,7 @@ module.exports = {
     "vuetify"
   ],
   outputDir: path.resolve(__dirname, "docs"),
+  publicPath: process.env.NODE_ENV === 'production' ? '/ese-exam-viewer/' : '/',
   pages: {
     index: {
       entry: './src/main.js',
